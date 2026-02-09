@@ -1,0 +1,8 @@
+/* 全局样式优先级提升（架构11.2节要求） */
+html, body, #app {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  height: 100% !important;
+  width: 100% !important;
+}

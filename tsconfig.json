@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "types": ["vite/client", "vue/global", "cesium", "node"], // 包含Cesium类型
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"] // 与Vite别名保持一致
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue", "vite.config.ts", "src/hooks/use-track.js", "src/hooks/use-3d.js"],
+  "exclude": ["node_modules", "dist"]
+}
